@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+.bg-brand-gradient {
+  background: linear-gradient(to right, #06b6d4, #ec4899); /* cyan → pink */
+}
+
+.text-brand-gradient {
+  background: linear-gradient(to right, #06b6d4, #ec4899);
+  background-clip: text; /* standard */
+  -webkit-background-clip: text; /* for Chrome/Safari */
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  font-family: "DM Sans", "Onest", "Outfit", sans-serif;
+}
+
+.bg-global-gradient {
+  background: linear-gradient(
+    135deg,
+    #000000,   /* black */
+    #1e293b,   /* slate-800 dark gray-blue */
+    #374151,   /* gray-700 (lighter than slate-800) */
+    #06b6d4,   /* cyan-500 */
+    #ec4899    /* pink-500 */
+  );
+}
+
+
+/* 
+animation */
+
+/* 🔹 Global Gradient Background */
+.bg-global-gradient {
+  background: linear-gradient(135deg, #0f0f0f, #1e1e1e, #222831, #363652);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* 
+----------------------------ANIMATION---------------------------------------------- */
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatLeftRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes rotateFloat {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(15deg) translateY(-15px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+}
+
+@keyframes scalePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+.float-updown {
+  animation: floatUpDown 6s ease-in-out infinite;
+}
+
+.float-leftright {
+  animation: floatLeftRight 5s ease-in-out infinite;
+}
+
+.float-rotate {
+  animation: rotateFloat 7s ease-in-out infinite;
+}
+
+.float-pulse {
+  animation: scalePulse 4s ease-in-out infinite;
+}
+
+
