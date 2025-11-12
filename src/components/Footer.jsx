@@ -30,10 +30,10 @@ const Footer = () => {
         <div className="footer-col-3 text-center md:text-left">
           <h3 className="text-xl font-bold text-white mb-4">Follow Me</h3>
           <div className="flex justify-center md:justify-start gap-4">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 transition-colors duration-200">
+            <a href="https://www.linkedin.com/in/vishwasbisht/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 transition-colors duration-200">
               <Linkedin className="w-7 h-7" />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 transition-colors duration-200">
+            <a href="https://github.com/vishwasbisht" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 transition-colors duration-200">
               <Github className="w-7 h-7" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 transition-colors duration-200">

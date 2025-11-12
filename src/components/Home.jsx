@@ -20,16 +20,31 @@ const Home = () => {
         style={{ clipPath: "polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%)" }}>
       </div>
       <img className="h-65 mt-15" src={profile_img} alt="" />
-      <h1 className="text-center font-bold text-6xl w-[60%]"><span className="text-brand-gradient">I am Vishwas Bisht,</span>React Developer based in India</h1>
+      <h1 className="text-center font-bold text-6xl w-[60%]"><span className="text-brand-gradient">I am Vishwas Bisht, </span>React Developer based in India</h1>
       <p className="w-[35%] text-center "> I am a reactjs devloper from chandigarh, India and
         this is my portfolio website that you can visit and Interact with me on projects </p>
       <div className="home-action flex gap-3 items-center">
-        <div className="connect text-white px-5 py-2 rounded-full cursor-pointer hover:scale-105 translate-3 border-2 border-white">
-          Connect with me
+        <div className=" mt-6 py-2">
+          <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=yourname@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="contact-me text-white px-5 py-2 rounded-full cursor-pointer hover:scale-105 translate-3 border-2 border-white"
+>
+  Contact with Me
+</a>
+
         </div>
-        <div className="resume text-white px-5 py-2 rounded-full cursor-pointer hover:scale-105 translate-3 border-2 border-white">
-          My Resume
-        </div>
+       <div className="resume text-white px-5 py-2 rounded-full cursor-pointer hover:scale-105 translate-3 border-2 border-white">
+  <a
+    href="https://drive.google.com/file/d/1-yziGF3BGMwsv-kOpErdeFU5TAoQfthS/view"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    My Resume
+  </a>
+</div>
+
       </div>
     </div>
   );

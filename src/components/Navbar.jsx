@@ -88,8 +88,17 @@ const Navbar = () => {
       </ul>
 
       {/* Contact Button */}
-      <div className="contact-me text-white px-5 py-2 rounded-full cursor-pointer hover:scale-105 translate-3 border-2 border-white">
-        Contact with Me
+      <div>
+<a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=vishwasbisht711@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="contact-me text-white px-5 py-2 rounded-full cursor-pointer hover:scale-105 translate-3 border-2 border-white"
+>
+  Contact with Me
+</a>
+
+
       </div>
 
       {/* Mobile menu button */}
